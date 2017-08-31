@@ -1,0 +1,170 @@
+{
+    "dataSchema": {
+        "datasetId": "",
+        "redacted":false,
+        "name": "Online retail dataset",
+        "descriptionFile": "",
+        "citationFile": " ",
+        "humanSubjectsResearch": "",
+        "originalLicense": "",
+        "source": "",
+        "remoteURI": "",
+        "rawData": false,
+        "trainData": {
+            "numSamples": "",
+            "trainData": [
+                {
+                    "varName": "",
+                    "varDescription": "",
+                    "varType": "",
+                    "varRole": "",
+                    "varFileType":"",
+                    "varFileFormat:":[]
+                }
+            ],
+            "trainTargets": [
+                {
+                    "varName": "",
+                    "varDescription": "",
+                    "varType": "",
+                    "VarRole": "",
+                    "varFileType":"",
+                    "varFileFormat:":[]
+                }
+            ]
+        },
+        "testDataSchemaMirrorsTrainDataSchema": true,
+        "testData": {
+            "numSamples": "",
+            "testData": [
+                {
+                    "varName": "",
+                    "varDescription": "",
+                    "varType": "",
+                    "VarRole": "",
+                    "varFileType":"",
+                    "varFileFormat:":[]
+                }
+            ],
+            "testTargets": [
+                {
+                    "varName": "",
+                    "varDescription": "",
+                    "varType": "",
+                    "VarRole": "",
+                    "varFileType":"",
+                    "varFileFormat:":[]
+                }
+            ]
+        },
+        "dataSchemaVersion": "2.07"
+    },
+    "meta": {
+        "datasetId": {
+            "comment": "unique ID for this dataset",
+            "required": true,
+            "type": "string",
+            "redaction": "mask"
+        },
+        "redacted": {
+            "comment": "indicates whether the dataset is redacted or not",
+            "required": true,
+            "type": "boolean"
+        },
+        "name": {
+            "comment": "name of this dataset",
+            "required": true,
+            "type": "string",
+            "redaction": "remove"
+        },
+        "descriptionFile": {
+            "required": false,
+            "type": "string"
+        },
+        "citationFile": {
+            "required": true,
+            "type": "string",
+            "redaction": "remove"
+        },
+        "humanSubjectsResearch": {
+            "required": false,
+            "type": "boolean",
+            "redaction": "remove"
+        },
+        "originalLicense": {
+            "comment": "Original use license that describes this data as provided",
+            "required": false,
+            "type": "string",
+            "redaction": "remove"
+        },
+        "source": {
+            "required": false,
+            "type": "string",
+            "redaction": "remove"
+        },
+        "remoteURI": {
+            "required": false,
+            "type": "string",
+            "redaction": "remove"
+        },
+        "rawData": {
+            "default": false,
+            "required": true,
+            "type": "boolean"
+        },
+        "trainData": {
+            "numSamples": "number of samples in the training data",
+            "trainData": {
+            },
+            "trainTargets": {
+            }
+        },
+        "testDataSchemaMirrorsTrainDataSchema": {
+            "default": true,
+            "required": true,
+            "type": "boolean"
+        },
+        "testData": {
+            "numSamples": "number of samples in the test data",
+            "testTargets": {
+            },
+            "testData": {
+            }
+        },
+        "varTypes": [
+            "boolean",
+            "float",
+            "integer",
+            "text",
+            "categorical",
+            {"ordinal": ["lowestValue", "mediumValue", "anotherValue", "highestValue"]},
+            "dateTime",
+            "location",
+            "file",
+            "boundary",
+            "unknown"
+        ],
+        "varRoles": [
+            "index",
+            "target",
+            "attribute",
+            "weight",
+            "metadata",
+            "nodeIndex",
+            "nodeAttribute",
+            "edgeIndex",
+            "edgeAttribute",
+            "comment"
+         ],
+        "varFileType":[
+            "image",
+            "video",
+            "audio",
+            "text",
+            "graph",
+            "tabular",
+            "timeSeries"
+        ],
+        "varFileFormat": []
+        }
+    }
