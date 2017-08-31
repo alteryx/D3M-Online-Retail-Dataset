@@ -1,0 +1,7 @@
+** General Links
++ [[http://archive.ics.uci.edu/ml/datasets/online+retail][Dataset Source]]
+
+** Wiki Links
++ [[https://datadrivendiscovery.org/wiki/display/gov/Dataset+Directory+Structure][Dataset Directory Structure]]
++ [[https://datadrivendiscovery.org/wiki/display/gov/Problem+Annotation+Schema][Problem Annotation Schema]]
++ [[https://datadrivendiscovery.org/wiki/display/gov/Data+Annotation+Schema][Data Annotation Schema]]
