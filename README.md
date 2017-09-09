@@ -1,10 +1,10 @@
 # About
-The python script ~/dfw_d3m/dfs_d3m.py~ takes in a multitable dataset
+The python script ``/dfw_d3m/dfs_d3m.py`` takes in a multitable dataset
 and outputs a feature matrix and D3M data schema.
 
 # How to use
-1. Install [[https://www.python.org/downloads/release/python-2713/][python 2.7]]
-2. Install python requirements [[https://www.featuretools.com/][Featuretools]] and [[http://scikit-learn.org/stable/][scikit-learn]]
+1. Install [python 2.7](https://www.python.org/downloads/release/python-2713/)
+2. Install python requirements [Featuretools](https://www.featuretools.com/) and [scikit-learn](http://scikit-learn.org/stable/)
 
 ```
    pip install sklearn
@@ -35,10 +35,10 @@ sample. The outputs are:
    transform that.
 
 # Reference
-** General Links
-+ [[http://archive.ics.uci.edu/ml/datasets/online+retail][Dataset Source]]
+## General Links
+* [Dataset Source](http://archive.ics.uci.edu/ml/datasets/online+retail)
 
 ## Wiki Links
-* [[https://datadrivendiscovery.org/wiki/display/gov/Dataset+Directory+Structure][Dataset Directory Structure]]
-* [[https://datadrivendiscovery.org/wiki/display/gov/Problem+Annotation+Schema][Problem Annotation Schema]]
-* [[https://datadrivendiscovery.org/wiki/display/gov/Data+Annotation+Schema][Data Annotation Schema]]
+* [Dataset Directory Structure](https://datadrivendiscovery.org/wiki/display/gov/Dataset+Directory+Structure)
+* [Problem Annotation Schema](https://datadrivendiscovery.org/wiki/display/gov/Problem+Annotation+Schema)
+* [Data Annotation Schema](https://datadrivendiscovery.org/wiki/display/gov/Data+Annotation+Schema)
