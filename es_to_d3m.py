@@ -4,9 +4,7 @@ from featuretools.variable_types import *
 
 def entityset_to_d3m(entityset, outpath, source=None, name=None,
                      remote_uri=None, description_path=None, citation_path=None,
-                     redacted=True, train_size=0.75):
-    # TODO: deep copy of entityset before we start making changes?
-
+                     redacted=True):
     # use schema defaults
     assert type(redacted) == bool, 'redacted must be a boolean'
     redacted = str(redacted).lower()

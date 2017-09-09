@@ -1,0 +1,117 @@
+{
+    "dataSchema": {
+        "datasetId": "demo_retail_data",
+        "redacted": true,
+        "descriptionFile": "../problemDescription.txt",
+        "citationFile": "../citation.bib",
+        "rawData": true,
+        "dataSchemaVersion": "2.07",
+        "rawData/invoices": {
+            "numSamples": "25900",
+            "rawData/invoices": [
+                {
+                    "varName": "first_item_purchases_time",
+                    "varType": "dateTime",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "CustomerID",
+                    "varType": "categorical",
+                    "varRole": "attribute",
+                    "varReference": {
+                        "references": "rawData/customers",
+                        "reference_id": "CustomerID"
+                     }
+                },
+                {
+                    "varName": "InvoiceNo",
+                    "varType": "categorical",
+                    "varRole": "index"
+                }
+            ]
+        },
+        "rawData/items": {
+            "numSamples": "4070",
+            "rawData/items": [
+                {
+                    "varName": "StockCode",
+                    "varType": "categorical",
+                    "varRole": "index"
+                },
+                {
+                    "varName": "first_item_purchases_time",
+                    "varType": "dateTime",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "Description",
+                    "varType": "categorical",
+                    "varRole": "attribute"
+                }
+            ]
+        },
+        "rawData/customers": {
+            "numSamples": "4373",
+            "rawData/customers": [
+                {
+                    "varName": "Country",
+                    "varType": "categorical",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "first_invoices_time",
+                    "varType": "dateTime",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "CustomerID",
+                    "varType": "categorical",
+                    "varRole": "index"
+                }
+            ]
+        },
+        "rawData/item_purchases": {
+            "numSamples": "541909",
+            "rawData/item_purchases": [
+                {
+                    "varName": "InvoiceDate",
+                    "varType": "dateTime",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "InvoiceNo",
+                    "varType": "categorical",
+                    "varRole": "attribute",
+                    "varReference": {
+                        "references": "rawData/invoices",
+                        "reference_id": "InvoiceNo"
+                     }
+                },
+                {
+                    "varName": "StockCode",
+                    "varType": "categorical",
+                    "varRole": "attribute",
+                    "varReference": {
+                        "references": "rawData/items",
+                        "reference_id": "StockCode"
+                     }
+                },
+                {
+                    "varName": "item_purchase_id",
+                    "varType": "categorical",
+                    "varRole": "index"
+                },
+                {
+                    "varName": "UnitPrice",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "Quantity",
+                    "varType": "integer",
+                    "varRole": "attribute"
+                }
+            ]
+        }
+    }
+}

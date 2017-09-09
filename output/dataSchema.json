@@ -1,0 +1,597 @@
+{
+    "dataSchema": {
+        "datasetId": "demo_retail_data",
+        "redacted": false,
+        "name": "online retail",
+        "descriptionFile": "../problemDescription.txt",
+        "citationFile": "../citation.bib",
+        "source": "ICS UCI Machine Learning Repository",
+        "remoteURI": "http://archive.ics.uci.edu/ml/datasets/online+retail",
+        "rawData": false,
+        "dataSchemaVersion": "2.07",
+        "trainData": {
+            "numSamples": "3279",
+            "trainData":  [
+                {
+                    "varName": "Country",
+                    "varType": "categorical",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "YEAR(first_invoices_time)",
+                    "varType": "ordinal",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "DAY(first_invoices_time)",
+                    "varType": "ordinal",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "COUNT(item_purchases)",
+                    "varType": "integer",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SKEW(item_purchases.Quantity)",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MIN(item_purchases.UnitPrice)",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "STD(item_purchases.Quantity)",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MIN(item_purchases.Quantity)",
+                    "varType": "integer",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MEAN(item_purchases.UnitPrice)",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MODE(item_purchases.StockCode)",
+                    "varType": "index",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "WEEKDAY(first_invoices_time)",
+                    "varType": "ordinal",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MONTH(first_invoices_time)",
+                    "varType": "ordinal",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MAX(item_purchases.UnitPrice)",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MEAN(item_purchases.Quantity)",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SUM(item_purchases.UnitPrice)",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SUM(item_purchases.Quantity)",
+                    "varType": "integer",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MAX(item_purchases.Quantity)",
+                    "varType": "integer",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "COUNT(invoices)",
+                    "varType": "integer",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "STD(item_purchases.UnitPrice)",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SKEW(item_purchases.UnitPrice)",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "NUM_UNIQUE(item_purchases.StockCode)",
+                    "varType": "integer",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "STD(invoices.MEAN(item_purchases.Quantity))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MIN(invoices.MEAN(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MODE(invoices.WEEKDAY(first_item_purchases_time))",
+                    "varType": "ordinal",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MIN(invoices.MIN(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MAX(invoices.STD(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SUM(invoices.MIN(item_purchases.Quantity))",
+                    "varType": "integer",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MODE(invoices.MONTH(first_item_purchases_time))",
+                    "varType": "ordinal",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SUM(invoices.STD(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "STD(invoices.NUM_UNIQUE(item_purchases.StockCode))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MEAN(invoices.STD(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SUM(invoices.MEAN(item_purchases.Quantity))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MODE(invoices.DAY(first_item_purchases_time))",
+                    "varType": "ordinal",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SKEW(invoices.NUM_UNIQUE(item_purchases.StockCode))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MAX(invoices.MIN(item_purchases.Quantity))",
+                    "varType": "integer",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MAX(invoices.STD(item_purchases.Quantity))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SUM(invoices.SKEW(item_purchases.Quantity))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MEAN(invoices.NUM_UNIQUE(item_purchases.StockCode))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MIN(invoices.COUNT(item_purchases))",
+                    "varType": "integer",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "STD(invoices.SUM(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MIN(invoices.MIN(item_purchases.Quantity))",
+                    "varType": "integer",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MODE(invoices.YEAR(first_item_purchases_time))",
+                    "varType": "ordinal",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MODE(invoices.MODE(item_purchases.StockCode))",
+                    "varType": "index",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SUM(invoices.MAX(item_purchases.Quantity))",
+                    "varType": "integer",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MEAN(invoices.SKEW(item_purchases.Quantity))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SKEW(invoices.MAX(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SUM(invoices.MEAN(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MEAN(invoices.COUNT(item_purchases))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MIN(invoices.SUM(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MEAN(invoices.SKEW(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SUM(invoices.SKEW(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MIN(invoices.STD(item_purchases.Quantity))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SKEW(invoices.SUM(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "NUM_UNIQUE(invoices.MONTH(first_item_purchases_time))",
+                    "varType": "integer",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SKEW(invoices.MIN(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MAX(invoices.MAX(item_purchases.Quantity))",
+                    "varType": "integer",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MEAN(invoices.SUM(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MAX(invoices.MIN(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MAX(invoices.SKEW(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "STD(invoices.STD(item_purchases.Quantity))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MAX(invoices.MEAN(item_purchases.Quantity))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MEAN(invoices.MIN(item_purchases.Quantity))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MEAN(invoices.MAX(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SUM(invoices.MAX(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MIN(invoices.MEAN(item_purchases.Quantity))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "STD(invoices.MIN(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MAX(invoices.MAX(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MAX(invoices.SUM(item_purchases.Quantity))",
+                    "varType": "integer",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SKEW(invoices.STD(item_purchases.Quantity))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "STD(invoices.MAX(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "STD(invoices.MAX(item_purchases.Quantity))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "STD(invoices.MEAN(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SKEW(invoices.COUNT(item_purchases))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SUM(invoices.STD(item_purchases.Quantity))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SUM(invoices.MIN(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "NUM_UNIQUE(invoices.WEEKDAY(first_item_purchases_time))",
+                    "varType": "integer",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MEAN(invoices.SUM(item_purchases.Quantity))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "STD(invoices.STD(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SKEW(invoices.SUM(item_purchases.Quantity))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SKEW(invoices.MEAN(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MIN(invoices.SKEW(item_purchases.Quantity))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SKEW(invoices.MEAN(item_purchases.Quantity))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MEAN(invoices.MEAN(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MIN(invoices.SUM(item_purchases.Quantity))",
+                    "varType": "integer",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "NUM_UNIQUE(invoices.DAY(first_item_purchases_time))",
+                    "varType": "integer",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MEAN(invoices.MAX(item_purchases.Quantity))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MEAN(invoices.MEAN(item_purchases.Quantity))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "STD(invoices.SKEW(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MIN(invoices.MAX(item_purchases.Quantity))",
+                    "varType": "integer",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "NUM_UNIQUE(invoices.YEAR(first_item_purchases_time))",
+                    "varType": "integer",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "NUM_UNIQUE(invoices.MODE(item_purchases.StockCode))",
+                    "varType": "integer",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SKEW(invoices.STD(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MIN(invoices.MAX(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SKEW(invoices.MAX(item_purchases.Quantity))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MEAN(invoices.STD(item_purchases.Quantity))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "STD(invoices.SKEW(item_purchases.Quantity))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SUM(invoices.NUM_UNIQUE(item_purchases.StockCode))",
+                    "varType": "integer",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MEAN(invoices.MIN(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MIN(invoices.NUM_UNIQUE(item_purchases.StockCode))",
+                    "varType": "integer",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MAX(invoices.MEAN(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MIN(invoices.SKEW(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MIN(invoices.STD(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MAX(invoices.NUM_UNIQUE(item_purchases.StockCode))",
+                    "varType": "integer",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "STD(invoices.SUM(item_purchases.Quantity))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MAX(invoices.SUM(item_purchases.UnitPrice))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "STD(invoices.COUNT(item_purchases))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "STD(invoices.MIN(item_purchases.Quantity))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MAX(invoices.SKEW(item_purchases.Quantity))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "MAX(invoices.COUNT(item_purchases))",
+                    "varType": "integer",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "SKEW(invoices.MIN(item_purchases.Quantity))",
+                    "varType": "float",
+                    "varRole": "attribute"
+                },
+                {
+                    "varName": "d3mIndex",
+                    "varType": "float",
+                    "varRole": "index"
+                }
+            ],
+            "trainTargets": [
+                {
+                    "varName": "label",
+                    "varDescription": "",
+                    "varType": "boolean",
+                    "varRole": "target"
+                },
+                {
+                    "varName": "time",
+                    "varDescription": "",
+                    "varType": "dateTime",
+                    "varRole": "metadata"
+                },
+                {
+                    "varName": "d3mIndex",
+                    "varDescription": "",
+                    "varType": "float",
+                    "varRole": "index"
+                }
+            ]
+        },
+        "testDataSchemaMirrorsTrainDataSchema": true,
+        "testData": {
+            "numSamples": "1093"
+        }
+    }
+}

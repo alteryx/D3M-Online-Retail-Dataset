@@ -1,5 +1,5 @@
 # About
-The python script ``/dfw_d3m/dfs_d3m.py`` takes in a multitable dataset
+The python script ``dfs_d3m.py`` takes in a multitable dataset
 and outputs a feature matrix and D3M data schema.
 
 # How to use
@@ -11,14 +11,16 @@ and outputs a feature matrix and D3M data schema.
    pip install featuretools
 ```
 
-3. Download the tar file at https://s3.amazonaws.com/featuretools-static/d3m_dfs.tar.gz
-4. Replace the LABELS_PATH and CUSTOMERS_PATH in dfs_d3m.py to point to customers.csv and purchase_sum_4_weeks.csv (or the _first_100 versions of those files)
-5. Run python dfs_d3m.py input_path output_path
+3. (Optional) Replace the LABELS_PATH in dfs_d3m.py to point to "data/purchase_sum_4_weeks_first_100.csv" to speed up run time (creates smaller dataset)
+4. Run
 
-This takes about 30 minutes to generate a feature matrix
-with the full dataset and about 30 seconds with the included
-sample. The outputs are:
-* dataSchema.json
+```
+python dfs_d3m.py data OUTPUT_PATH
+```
+(OUTPUT_PATH is the directory where the clean dataset will be created)
+
+The outputs are:
+* data/dataSchema.json
 * data/trainData.csv
 * data/trainTargets.csv
 * data/testData.csv
