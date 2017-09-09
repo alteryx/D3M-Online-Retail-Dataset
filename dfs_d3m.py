@@ -120,7 +120,7 @@ def dfs_d3m(inpath, outpath):
     cutoff_time.loc[y_test.index.values].to_csv(test_target_out, index=False)
 
     # Write the string to file
-    with open(os.path.join(outpath, 'dataSchema.json'), 'wb') as g:
+    with open(os.path.join(outpath, 'data/dataSchema.json'), 'wb') as g:
         g.write(s)
 
 
