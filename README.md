@@ -15,7 +15,7 @@ and outputs a feature matrix and D3M data schema.
 4. Run
 
 ```
-python dfs_d3m.py data OUTPUT_PATH
+python dfs_d3m.py input OUTPUT_PATH
 ```
 (OUTPUT_PATH is the directory where the clean dataset will be created)
 
